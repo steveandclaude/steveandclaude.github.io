@@ -252,7 +252,7 @@
 <body>
 <div id="gate"><h2>Good Tech Summit</h2><input id="gatePass" type="password" placeholder="Password" autofocus><button onclick="checkGate()">Enter</button><div class="err" id="gateErr"></div></div>
 <script>
-function checkGate(){var p=document.getElementById('gatePass').value;if(p==='goodtech2026'){document.getElementById('gate').classList.add('hidden');sessionStorage.setItem('gts','1')}else{document.getElementById('gateErr').textContent='Incorrect password'}}
+function checkGate(){var p=document.getElementById('gatePass').value;if(p==='raising-the-floor'){document.getElementById('gate').classList.add('hidden');sessionStorage.setItem('gts','1')}else{document.getElementById('gateErr').textContent='Incorrect password'}}
 document.getElementById('gatePass').addEventListener('keydown',function(e){if(e.key==='Enter')checkGate()});
 if(sessionStorage.getItem('gts')==='1')document.getElementById('gate').classList.add('hidden');
 </script>
